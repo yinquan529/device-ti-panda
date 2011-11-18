@@ -22,6 +22,10 @@ USE_CAMERA_STUB := true
 # Default values, possibly overridden by BoardConfigVendor.mk
 TARGET_BOARD_INFO_FILE := device/ti/panda/board-info.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/ti/panda/bluetooth
+UBOOT_CONFIG := omap4_panda_config
+KERNEL_CONFIG := android_omap4_defconfig
+TARGET_USE_UBOOT := true
+XLOADER_CONFIG := omap4430panda_config
 
 # Use the non-open-source parts, if they're present
 -include vendor/ti/panda/BoardConfigVendor.mk
